@@ -434,6 +434,66 @@ header .content img{
     justify-content: center;
  }
  
+ #gali-diva-1{
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/39/24/45/392445ac1f59b1b15ca465fa2fab30df/392445ac1f59b1b15ca465fa2fab30df.11.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ #gali-diva-1 h1{
+    width: 25vw;
+    height: 30vh;
+    background-color: #000000a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ #gali-diva-2{
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/4b/43/c2/4b43c21b9a518208815a2121dd256600/4b43c21b9a518208815a2121dd256600.23.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ #gali-diva-2 h1{
+    width: 25vw;
+    height: 30vh;
+    background-color: #000000a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ #vibe{
+    background-image: url(images/vibe-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ #vibe h1{
+    width: 25vw;
+    height: 30vh;
+    background-color: #000000a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ #oksana{
+    background-image: url(images/oksana.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ #oksana h1{
+    width: 25vw;
+    height: 30vh;
+    background-color: #000000a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
 .skills-and-experience{
     width: 100vw;
     height: max-content;
@@ -740,6 +800,18 @@ header .content img{
     width: 100vw;
  }
  #undercover h1{
+    width: 100vw;
+ }
+ #gali-diva-1 h1{
+    width: 100vw;
+ }
+ #gali-diva-2 h1{
+    width: 100vw;
+ }
+ #vibe h1{
+    width: 100vw;
+ }
+ #oksana h1{
     width: 100vw;
  }
 #skills{
