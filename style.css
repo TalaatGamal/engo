@@ -359,48 +359,81 @@ header .content img{
     justify-content: center;
  }
  
- 
- 
- /*
-.med-info{
-    background-color: rgba(0, 255, 255, 0);
-    width: max-content;
-    height: 30vh;
-    display: block;
-    overflow: hidden;
-    position: absolute;
-    z-index: 1;
-    top: 90vh;
-    right: 8.5vw;
-
-}
-.cards-home-med-info{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: #00000000;
-    width: max-content;
-    height: 30vh;
-}
-.cards-med-info{
-    background-color: #67676700;
-    width: 11.5vw;
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    color: #ffffff;
-    border: #676767 solid 4px;
-    margin: 20px;
-    margin-top: 0px;
-    background-image: url(images/nite.jpg);
+ #redhed-1{
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/6f/91/f8/6f91f8372d9dfa3a8d21fccd56eabaf3-1/6f91f8372d9dfa3a8d21fccd56eabaf3.26.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-size: 30px;
-} */
+  }
+ #redhed-1 h1{
+    width: 25vw;
+    height: 30vh;
+    background-color: #000000a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ #redhed-2{
+    background-image: url(images/redhed-2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ #redhed-2 h1{
+    width: 25vw;
+    height: 30vh;
+    background-color: #000000a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ #family-stro-1{
+    background-image: url(images/family-stroks.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ #family-stro-1 h1{
+    width: 25vw;
+    height: 30vh;
+    background-color: #000000a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ #ladyfyre-1{
+    background-image: url(images/ladyfyre-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ #ladyfyre-1 h1{
+    width: 25vw;
+    height: 30vh;
+    background-color: #000000a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ #undercover{
+    background-image: url(images/undercover.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ #undercover h1{
+    width: 25vw;
+    height: 30vh;
+    background-color: #000000a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
 .skills-and-experience{
     width: 100vw;
     height: max-content;
@@ -485,81 +518,7 @@ header .content img{
 .experience ul li{
     font-size: large;
     margin: 15px;
- }/*
-.services{
-    width: 100vw;
-    height: max-content;
-    min-height: 100vh;
-    background-image: url(images/massimiliano-r-Xo8fxc_6w-unsplash.jpg);
-    background-position:bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-} */
-#services {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.753);
-    width: 100vw;
-    height: max-content;
-    min-height: 100vh;
-    /* background-image: url(images/massimiliano-r-Xo8fxc_6w-unsplash.jpg); */
-    background-position:bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-#services h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #ffffff;
-    background-color: #000000c8;
-    border-left: #009dff solid 8px;
-    border-right: #00a2ff solid 8px;
-    border-top: #009dff solid 4px;
-    width: 100vw;
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.service-card {
-    display: inline-block;
-    width: 30%;
-    margin: 2.5%;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-    border: #ffffff solid 2px;
-}
-
-.service-icon {
-    font-size: 3em;
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-.service-card h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #ffffff;
-}
-
-.service-card p {
-    font-size: 1em;
-    color: #666;
-}
-
+ }
 .footer{
     background-color: #67676700;
     width: 100vw;
@@ -572,7 +531,7 @@ header .content img{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #000000;
+    background-color: #00000000;
     box-shadow: #000000 0px 0px 40px 0px;
     width: 100vw;
     height: max-content;
@@ -606,7 +565,11 @@ header .content img{
     justify-content: center;
 }
 .site-or-company a img{
-    width: 60px;
+    width: 50px;
+    background-color: #d4f3ff;
+    padding: 3px;
+    border-radius: 100px;
+    border: #00aeff79 solid 4px;
 }
 .site-or-company a h3{
     margin-left: 15px;
@@ -702,23 +665,6 @@ header .content img{
         z-index: 1;
         /* animation: liste 20s linear infinite; */
     }
-/*     
-@keyframes liste {
-    0% {
-      opacity: 1;
-      /* transform: translateX(-20%); *//*
-      transform: translateY(-50%);
-    }
-    50% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-    100% {
-      opacity: 0;
-      /* transform: translateX(20%); *//*
-      transform: translateY(300%);
-    }
-    } */
 
     header {
         height: 6vh;
@@ -749,8 +695,8 @@ header .content img{
 .porn-back-1{
     position: fixed;
     top: 0;
-    left: -420px;
-    width: 250vw;
+    left: -560px;
+    width: 300vw;
     height: 100vh;
     z-index: -9;
 }
@@ -781,6 +727,21 @@ header .content img{
  #breed h1{
     width: 100vw;
  }
+ #redhed-1 h1{
+    width: 100vw;
+ }
+ #redhed-2 h1{
+    width: 100vw;
+ }
+ #family-stro-1 h1{
+    width: 100vw;
+ }
+ #ladyfyre-1 h1{
+    width: 100vw;
+ }
+ #undercover h1{
+    width: 100vw;
+ }
 #skills{
     background-color: rgba(26, 36, 41, 0);
     width: 100vw;
@@ -788,6 +749,23 @@ header .content img{
 }
 #title-skills{
     margin-top: 10vh;
+}
+#title-skills img{
+    width: 70px;
+    background-color: #d4f3ff;
+    padding: 5px;
+    border-radius: 20px;
+    border: #00aeff79 solid 4px;
+    margin-left: 20px;
+}
+
+.title-projects img{
+    width: 70px;
+    background-color: #d4f3ff;
+    padding: 5px;
+    border-radius: 20px;
+    border: #00aeff79 solid 4px;
+    margin-left: 20px;
 }
 #content-skills{
     width: 100vw;
@@ -808,6 +786,15 @@ header .content img{
 }
 #title-experience{
     margin-top: 5vh;
+}
+
+#title-experience img{
+    width: 70px;
+    background-color: #d4f3ff;
+    padding: 5px;
+    border-radius: 20px;
+    border: #00aeff79 solid 4px;
+    margin-left: 20px;
 }
 #content-experience{
     width: 100vw;
@@ -856,6 +843,7 @@ header .content img{
     width: 100vw;
     height: max-content;
     min-height: 50vh;
+    box-shadow: #008cff2c 0px 0px 100px 100px;
 }
 .content-footer{
     padding-top: 10vh;
@@ -892,10 +880,13 @@ header .content img{
     height: 20vh;
     text-align: center;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content:space-evenly;
     background-color: #009dff00;
     width: 100%;
+    gap: 30px;
 }
 .content-infoo-footer h2{
     color: #ffffff;
