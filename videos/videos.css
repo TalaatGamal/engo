@@ -1,0 +1,539 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../images/paul-pastourmatzis-08P2R1IRShw-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+.porn-back-1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: -9;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+.container{
+    background-color:  rgba(0, 0, 0, 0);
+    width: 100vw;
+    height: 0vh;
+    z-index: 1;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.486);
+    color: #ffffff;
+    height: 10vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0vh;
+    left: 0px;
+    z-index: 2;
+}
+.content{
+    background-color: rgba(165, 42, 42, 0);
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: max-content;
+    min-width: 100vw;
+    justify-content: right;
+    align-items: center;
+}
+header .content img{
+    width: 50px;
+    background-color: #d4f3ff;
+    padding: 3px;
+    border-radius: 100px;
+    border: #00aeff79 solid 4px;
+}
+.hot{
+    color: #79c1ff;
+    text-decoration: underline;
+}
+.logo-div{
+    display: block;
+    flex-direction: row;
+    min-width: max-content;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 10vw;
+}
+.logo-divo{
+    display: flex;
+    flex-direction: row;
+    min-width: max-content;
+    align-items: center;
+    justify-content: center;
+}
+.logo-divo h3{
+    margin-left: 15px;
+ }
+.header-links{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    background-color: rgba(0, 128, 255, 0.059);
+    min-width: 30%;
+    margin-right: 10vw;
+    /* border-radius: 20px; */
+    padding: 15px;
+    border-right: #676767 solid 2px;
+    border-left: #696969 solid 2px;
+} 
+.header-links a {
+    color: white;
+    animation: blink 2s infinite;
+    margin-right: 20px;
+}
+@keyframes blink {
+    0%, 100% {
+        color: white;
+    }
+    50% {
+        color: rgb(0, 179, 255);
+    }
+}
+.header-links li:nth-child(1) a {
+    animation-delay: 0s;
+}
+.header-links li:nth-child(2) a {
+    animation-delay: 0.5s;
+}
+.header-links li:nth-child(3) a {
+    animation-delay: 1s;
+}
+.header-links li:nth-child(4) a {
+    animation-delay: 1.5s;
+}
+.header-links li:nth-child(5) a {
+    animation-delay: 2s;
+}
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 27px;
+    margin-right: 10vw;
+}
+.info{
+    background-color: #69696900;
+    background-image: url(images/nite.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: max-content;
+    min-height: 100vh;
+    z-index: 0;
+}
+.info .content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100vw;
+    height: max-content;
+    min-height: 100vh;
+    /* padding: 100px; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 0;
+}
+.cards-home-div{
+    background-color: #ffffff00;
+}
+.title-projects-div{
+    background-color: #00000000;
+    /* border-left: #009dff solid 10px;
+    border-right: #00a2ff solid 10px; */
+    width: 100vw;
+    position:absolute;
+    top: 10vh;
+    height: 10vh;
+    /* box-shadow: #009dff20 0px 100px 100px 100px; */
+    z-index: 1;
+
+}
+.cards-home-div{
+    background-color: #009dff00;
+    position: absolute;
+    top: 20vh;
+}
+.title-projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #00000000;
+    color: #ffffff;
+    height: 10vh;
+}
+.title-projects img{
+    width: 70px;
+    background-color: #d4f3ff;
+    padding: 3px;
+    border-radius: 20px;
+    margin-left: 20px;
+    border: #00aeff79 solid 4px;
+}
+.cards-home{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: max-content;
+    background-color: rgba(0, 255, 255, 0);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    /* padding: 70px; */
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.cards-home a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.cards{
+    width: 25vw;
+    height: 30vh;
+    background-color: rgba(0, 0, 0, 0.245);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    color: rgba(255, 255, 255, 0);
+    border: #ffffff solid 2px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+#usa-lottery{
+    background-image: url(../images/jessiJek.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* #usa-lottery h1{
+    width: 25vw;
+    height: 30vh;
+    background-color: #000000d6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ } */
+ #login-page{
+    background-image: url(../images/secretfilmed.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ /* #login-page h1{
+    width: 25vw;
+    height: 30vh;
+    background-color: #000000a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ } */
+ #perv-mom{
+    background-image: url(https://gcore-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/2a/5e/20/2a5e201f18d9e927addd9c4430df3bb2-2/2a5e201f18d9e927addd9c4430df3bb2.18.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ /* #perv-mom h1{
+    width: 25vw;
+    height: 30vh;
+    background-color: #000000a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ } */
+ #secrets2{
+    background-image: url(../images/secrets2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ /* #secrets2 h1{
+    width: 25vw;
+    height: 30vh;
+    background-color: #000000a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ } */
+ 
+ #breed{
+    background-image: url(../images/breed.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ /* #breed h1{
+    width: 25vw;
+    height: 30vh;
+    background-color: #000000a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ } */
+ 
+ #redhed-1{
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/6f/91/f8/6f91f8372d9dfa3a8d21fccd56eabaf3-1/6f91f8372d9dfa3a8d21fccd56eabaf3.26.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ /* #redhed-1 h1{
+    width: 25vw;
+    height: 30vh;
+    background-color: #000000a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ } */
+ 
+ #redhed-2{
+    background-image: url(../images/redhed-2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ /* #redhed-2 h1{
+    width: 25vw;
+    height: 30vh;
+    background-color: #000000a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ } */
+ 
+ #family-stro-1{
+    background-image: url(../images/family-stroks.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ /* #family-stro-1 h1{
+    width: 25vw;
+    height: 30vh;
+    background-color: #000000a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ } */
+ 
+ #ladyfyre-1{
+    background-image: url(../images/ladyfyre-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ /* #ladyfyre-1 h1{
+    width: 25vw;
+    height: 30vh;
+    background-color: #000000a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ } */
+ 
+ #undercover{
+    background-image: url(../images/undercover.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ /* #undercover h1{
+    width: 25vw;
+    height: 30vh;
+    background-color: #000000a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ } */
+ 
+ #gali-diva-1{
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/39/24/45/392445ac1f59b1b15ca465fa2fab30df/392445ac1f59b1b15ca465fa2fab30df.11.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ /* #gali-diva-1 h1{
+    width: 25vw;
+    height: 30vh;
+    background-color: #000000a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ } */
+
+ #gali-diva-2{
+    background-image: url(https://cdn77-pic.xnxx-cdn.com/videos/thumbs169xnxxposter/4b/43/c2/4b43c21b9a518208815a2121dd256600/4b43c21b9a518208815a2121dd256600.23.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ /* #gali-diva-2 h1{
+    width: 25vw;
+    height: 30vh;
+    background-color: #000000a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ } */
+ 
+ #vibe{
+    background-image: url(../images/vibe-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ /* #vibe h1{
+    width: 25vw;
+    height: 30vh;
+    background-color: #000000a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ } */
+ 
+ #oksana{
+    background-image: url(../images/oksana.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+ /* #oksana h1{
+    width: 25vw;
+    height: 30vh;
+    background-color: #000000a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ } */
+ 
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+    .header-links li {
+        padding: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .header-links.active {
+        display: flex;
+        flex-direction:  row;
+        width: 100%;
+        position: fixed;
+        top: 10vh; /* Adjust according to your header height */
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1;
+        /* animation: liste 20s linear infinite; */
+    }
+
+    header {
+        height: 6vh;
+        top: 0vh;
+    }
+
+    header .content img {
+        width: 35px;
+    }
+
+.porn-back-1{
+    position: fixed;
+    top: 0;
+    left: -560px;
+    width: 300vw;
+    height: 100vh;
+    z-index: -9;
+}
+#container{
+    height: max-content;
+}
+#cards-home a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.cards{
+    width: 47vw;
+    height: 18vh;
+}
+/* 
+#usa-lottery h1{
+    width: 100%;
+}
+
+#login-page h1{
+    width: 100vw;
+ }
+ #perv-mom h1{
+    width: 100vw;
+ }
+ #secrets2 h1{
+    width: 100vw;
+ }
+ #breed h1{
+    width: 100vw;
+ }
+ #redhed-1 h1{
+    width: 100vw;
+ }
+ #redhed-2 h1{
+    width: 100vw;
+ }
+ #family-stro-1 h1{
+    width: 100vw;
+ }
+ #ladyfyre-1 h1{
+    width: 100vw;
+ }
+ #undercover h1{
+    width: 100vw;
+ }
+ #gali-diva-1 h1{
+    width: 100vw;
+ }
+ #gali-diva-2 h1{
+    width: 100vw;
+ }
+ #vibe h1{
+    width: 100vw;
+ }
+ #oksana h1{
+    width: 100vw;
+} */
+
+}
