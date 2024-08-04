@@ -210,7 +210,7 @@ header .content img{
 }
 .info{
     background-color: #69696900;
-    background-image: url(images/nite.jpg);
+    /* background-image: url(images/nite.jpg); */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -288,7 +288,7 @@ header .content img{
     border-radius: 20px;
 }
 #usa-lottery{
-    background-image: url(images/jessiJek.png);
+    background-image: url(../images/jessiJek.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -302,7 +302,7 @@ header .content img{
     justify-content: center;
  }
  #login-page{
-    background-image: url(images/secretfilmed.png);
+    background-image: url(../images/secretfilmed.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -330,7 +330,7 @@ header .content img{
     justify-content: center;
  }
  #secrets2{
-    background-image: url(images/secrets2.png);
+    background-image: url(../images/secrets2.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -345,7 +345,7 @@ header .content img{
  }
  
  #breed{
-    background-image: url(images/breed.png);
+    background-image: url(../images/breed.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -375,7 +375,7 @@ header .content img{
  }
  
  #redhed-2{
-    background-image: url(images/redhed-2.png);
+    background-image: url(../images/redhed-2.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -390,7 +390,7 @@ header .content img{
  }
  
  #family-stro-1{
-    background-image: url(images/family-stroks.png);
+    background-image: url(../images/family-stroks.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -405,7 +405,7 @@ header .content img{
  }
  
  #ladyfyre-1{
-    background-image: url(images/ladyfyre-1.png);
+    background-image: url(../images/ladyfyre-1.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -420,7 +420,7 @@ header .content img{
  }
  
  #undercover{
-    background-image: url(images/undercover.png);
+    background-image: url(../images/undercover.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -465,7 +465,7 @@ header .content img{
  }
  
  #vibe{
-    background-image: url(images/vibe-1.png);
+    background-image: url(../images/vibe-1.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -480,7 +480,7 @@ header .content img{
  }
  
  #oksana{
-    background-image: url(images/oksana.png);
+    background-image: url(../images/oksana.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
