@@ -655,8 +655,14 @@ header .content img{
     color: #ffffff;
 }
 .cards{
-    width: 47vw;
-    height: 18vh;
+    /* width: 47vw;
+    height: 18vh; */
+    width: 90vw;
+    height: 25vh;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: #009de000 solid 0.1px;
+    box-shadow: #00b3ff6b 0px 0px 200px 10px;
 }
 
 #usa-lottery h1{
