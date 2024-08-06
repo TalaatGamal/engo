@@ -226,9 +226,9 @@ header .content img{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 80vw;
     height: max-content;
-    background-color: rgba(0, 255, 255, 0);
+    background-color: rgba(134, 0, 0, 0);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -606,6 +606,18 @@ header .content img{
     background-size: cover;
     background-repeat: no-repeat;
  }
+ #volaben20{
+   background-image: url(../images/egypt-1.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+#volaben21{
+   background-image: url(../images/egypt-2.png);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {

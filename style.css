@@ -238,7 +238,7 @@ header .content img{
     background-color: #ffffff00;
 }
 .title-projects-div{
-    background-color: #000000af;
+    background-color: #000000b9;
     border-left: #009dff solid 8px;
     border-right: #00a2ff solid 8px;
     width: 100vw;
@@ -256,6 +256,14 @@ header .content img{
     background-color: #00000000;
     color: #ffffff;
     height: 10vh;
+}
+.title-projects img{
+    width: 70px;
+    background-color: #d4f3ff;
+    padding: 5px;
+    border-radius: 20px;
+    border: #00aeff79 solid 4px;
+    margin-left: 20px;
 }
 .cards-home{
     display: flex;
@@ -528,6 +536,14 @@ header .content img{
     border-right: #00a2ff solid 8px;
     padding: 30px;
 }
+.title-skills img{
+    width: 70px;
+    background-color: #d4f3ff;
+    padding: 5px;
+    border-radius: 20px;
+    border: #00aeff79 solid 4px;
+    margin-left: 20px;
+}
 .content-skills{
     display: flex;
     flex-direction: column;
@@ -560,6 +576,15 @@ header .content img{
     border-left: #009dff solid 8px;
     border-right: #00a2ff solid 8px;
     padding: 30px;
+}
+
+.title-experience img{
+    width: 70px;
+    background-color: #d4f3ff;
+    padding: 5px;
+    border-radius: 20px;
+    border: #00aeff79 solid 4px;
+    margin-left: 20px;
 }
 .content-experience{
     display: flex;
