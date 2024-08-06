@@ -17,7 +17,21 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow-x: hidden;
+
+
+    display: none;  /*test*/
+
+
 }
+                    /*test*/
+#password-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+                    /*end test*/
 .porn-back-1{
     position: fixed;
     top: 0;

@@ -27,7 +27,15 @@
     </script>
 </head>
 <body>
-    <div class="container" id="container">
+    <div id="password-form">
+        <form id="form">
+          <label for="password">Enter Password:</label>
+          <input type="password" id="password" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div id="content" style="display: none;">
+        <div class="container" id="container">
         <header class="header" id="header">
             <div class="content" id="content">
 
@@ -183,6 +191,8 @@
            </div>
            <!-- end -->
     </div>
+      </div>
+   
     <script src="script.js"></script>
 </body>
 </html>
