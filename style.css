@@ -12,6 +12,7 @@ html{
 body{
     background-color: rgb(26, 36, 41);
     /* background-image: url(images/paul-pastourmatzis-08P2R1IRShw-unsplash.jpg); */
+    background-image: url(images/sexy-1.jpg);
     transition: background-image 1s ease-in-out; /* انتقال سلس لمدة 1 ثانية */
     background-position: center;
     background-size: cover;
@@ -30,12 +31,12 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #08798a;
+    /* background-color: #08798a; */
     /* background-image: url(https://images.unsplash.com/photo-1722941600511-e133ca2fc837?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
     /* background-image: url(https://images.unsplash.com/photo-1592399737996-fb91cf01b7fb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
     /* background-image: url(https://media.istockphoto.com/id/1224542830/photo/dark-haired-bearded-man-hugging-his-pregnant-wife-while-sleeping.jpg?s=2048x2048&w=is&k=20&c=gLFs4O78SVtKEcMbux9pIqaTrfhf6KL0QeET9xCD7N8=); */
     /* background-image: url(https://media.istockphoto.com/id/174945387/photo/amorous-couple-with-fun-in-the-park.jpg?s=2048x2048&w=is&k=20&c=vdvaxIQ0NW0Cm_QP8z8AyOStglVDe1XGhGROWoKO9fA=); */
-    /* background-image: url(https://media.istockphoto.com/id/93246104/photo/couple-in-love.jpg?s=2048x2048&w=is&k=20&c=q6_pgm5sAfgA6Q588mmQF9dy_ZTJpTXGligYfU0YZKY=); */
+    background-image: url(images/sexy-1.jpg);
     transition: background-image 1s ease-in-out; /* انتقال سلس لمدة 1 ثانية */
     background-position: center;
     background-size: cover;
@@ -1132,6 +1133,7 @@ header .content img{
 }
 #password-form {
     /* background-image: url(https://images.unsplash.com/photo-1515865697047-440148b5cfd5?q=80&w=1885&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
+    background-image: url(images/sexy-1.jpg);
     transition: background-image 1s ease-in-out; /* انتقال سلس لمدة 1 ثانية */
     background-position: center;
     background-repeat: no-repeat;

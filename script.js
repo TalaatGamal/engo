@@ -36,51 +36,8 @@
 
 
 
-//     const images = [
-//     'url("images/sexy1.jpg")',
-//     'url("images/sexy2.jpeg")',
-//     'url("images/sexy3.jpeg")',
-//     'url("images/sexy4.jpeg")',
-//     'url("images/sexy5.jpeg")',
-//     'url("images/sexy6.jpeg")',
-//     'url("images/sexy7.jpeg")',
-//     'url("images/sexy8.jpg")',
-//     'url("images/sexy9.jpg")',
-//     'url("images/sexy10.jpg")',
-//     'url("images/sexy11.jpg")',
-//     'url("images/sexy12.jpg")',
-//     'url("images/sexy13.jpg")',
-//     'url("images/sexy14.jpg")',
-//     'url("images/sexy15.jpg")'
-// ]
-
-// let currentIndex = 0;
-// const backgroundDiv = document.querySelector('body');
-
-// function changeBackground() {
-//   currentIndex = (currentIndex + 1) % images.length;
-//   backgroundDiv.style.backgroundImage = images[currentIndex];
-// }
-
-// // تغيير الخلفية كل 5 ثواني
-// setInterval(changeBackground, 2000);
-
-// // تعيين الخلفية الأولية
-// backgroundDiv.style.backgroundImage = images[currentIndex];
-
-
-
-
-
-
-
-
-
-
-
-
 const images1 = [
-    'url("images/sexy1.jpg")',
+    'url("images/sexy-1.jpg")',
     'url("images/sexy2.jpeg")',
     'url("images/sexy3.jpeg")',
     'url("images/sexy4.jpeg")',
@@ -98,7 +55,7 @@ const images1 = [
 ];
 
 const images2 = [
-    'url("images/sexy1.jpg")',
+    'url("images/sexy-1.jpg")',
     'url("images/sexy2.jpeg")',
     'url("images/sexy3.jpeg")',
     'url("images/sexy4.jpeg")',
