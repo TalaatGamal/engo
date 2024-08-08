@@ -11,7 +11,8 @@ html{
 }
 body{
     background-color: rgb(26, 36, 41);
-    background-image: url(images/paul-pastourmatzis-08P2R1IRShw-unsplash.jpg);
+    /* background-image: url(images/paul-pastourmatzis-08P2R1IRShw-unsplash.jpg); */
+    transition: background-image 1s ease-in-out; /* انتقال سلس لمدة 1 ثانية */
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -91,6 +92,7 @@ body{
     left: 0;
     width: 100vw;
     z-index: -9;
+    display: none;
 }
 
 header a{
@@ -98,10 +100,15 @@ header a{
     text-decoration: none;
 }
 .container{
-    background-color:  rgba(0, 0, 0, 0.720);
+    background-color:  rgba(0, 0, 0, 0.39);
     width: 100vw;
     height: 100vh;
     z-index: 1;
+    transition: background-imagek 1s ease-in-out; /* انتقال سلس لمدة 1 ثانية */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 header{
     background-color: rgba(0, 0, 0, 0.5);
@@ -291,7 +298,7 @@ header .content img{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
-    background-color: rgba(0, 0, 0, 0.686);
+    background-color: rgba(0, 0, 0, 0);
     width: 100vw;
     height: max-content;
     min-height: 100vh;
@@ -305,14 +312,14 @@ header .content img{
     background-color: #ffffff00;
 }
 .title-projects-div{
-    background-color: #000000b9;
+    /* background-color: #000000b9;
     border-left: #009dff solid 8px;
-    border-right: #00a2ff solid 8px;
+    border-right: #00a2ff solid 8px; */
     width: 100vw;
     position: absolute;
     top: 100vh;
     height: 10vh;
-    box-shadow: #009dff20 0px 100px 100px 100px;
+    /* box-shadow: #009dff20 0px 100px 100px 100px; */
 
 }
 .title-projects{
@@ -338,7 +345,7 @@ header .content img{
     flex-wrap: wrap;
     width: 100vw;
     height: max-content;
-    background-color: rgba(0, 255, 255, 0);
+    background-color: rgba(8, 171, 171, 0);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -352,7 +359,7 @@ header .content img{
 .cards{
     width: 25vw;
     height: 30vh;
-    background-color: rgba(0, 0, 0, 0.245);
+    background-color: rgba(0, 0, 0, 0.219);
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -789,6 +796,8 @@ header .content img{
 .text-histo h2{
     color: #ffffff;
 }
+
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
