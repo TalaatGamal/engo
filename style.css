@@ -576,6 +576,43 @@ header .content img{
     align-items: center;
     justify-content: center;
  }
+
+
+ 
+.cards-home-tiktok{
+    width: 100vw;
+    height: max-content;
+    background-color: rgba(8, 171, 171, 0);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cont-tik{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: max-content;
+    background-color: rgba(8, 171, 171, 0);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    /* padding: 70px; */
+}
+.cards-t{
+    width: 20vw;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.219);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    color: white;
+    border: #ffffff solid 2px;
+    overflow: hidden;
+    border-radius: 20px;
+}
  
 .skills-and-experience{
     width: 100vw;
@@ -872,7 +909,10 @@ header .content img{
 .cards{
     width: 90vw;
 }
-
+.cards-t{
+    width: 46vw;
+    height: 40vh;
+}
 #usa-lottery h1{
     width: 100%;
 }
