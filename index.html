@@ -171,6 +171,31 @@
                                         this.pause();
                                     });
                                 });
+                                document.addEventListener('touchmove', function(event) {
+                                const touch = event.touches[0];
+                                let touchedVideo = null;
+                                videos.forEach(video => {
+                                    const rect = video.getBoundingClientRect();
+                                    if (touch.clientX >= rect.left && touch.clientX <= rect.right &&
+                                        touch.clientY >= rect.top && touch.clientY <= rect.bottom) {
+                                        touchedVideo = video;
+                                    }
+                                });
+                                if (touchedVideo) {
+                                    if (activeVideo !== touchedVideo) {
+                                        if (activeVideo) {
+                                            activeVideo.pause();
+                                        }
+                                        activeVideo = touchedVideo;
+                                        activeVideo.play();
+                                    }
+                                } else {
+                                    if (activeVideo) {
+                                        activeVideo.pause();
+                                        activeVideo = null;
+                                    }
+                                }
+                            });
                             </script>
                         </div>
                        </div>
