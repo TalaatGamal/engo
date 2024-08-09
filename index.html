@@ -192,18 +192,39 @@
         //     const touch = event.changedTouches[0];
         //     handleVideoPlayback(touch.clientX, touch.clientY);
         // });
-
         
-        document.addEventListener('touchend', function(event) {
-    // Check if the touch event is on the input field
-    const touchedElement = document.elementFromPoint(event.changedTouches[0].clientX, event.changedTouches[0].clientY);
-    
-    if (touchedElement.tagName !== 'INPUT' && touchedElement.tagName !== 'TEXTAREA') {
+        
+        
+
+
+// لمنع منع التفاعل مع الروابط والأزرار
+document.querySelectorAll('a, button,').forEach(function(element) {
+    element.addEventListener('touchend', function(event) {
+        event.stopPropagation(); // يمنع معالجة الحدث بواسطة عناصر أخرى
+    });
+});
+
+// معالج لأحداث اللمس العامة
+document.addEventListener('touchend', function(event) {
+    const touchedElement = event.target;
+
+    // التأكد من أن اللمسة ليست على رابط أو زر
+    if (
+        touchedElement.tagName !== 'INPUT' && 
+        touchedElement.tagName !== 'TEXTAREA' && 
+        touchedElement.tagName !== 'A' && 
+        touchedElement.tagName !== 'BUTTON'&& 
+        !touchedElement.classList.contains('dropdown') // إضافة شرط للـ dropdown
+
+    ) {
         event.preventDefault();
         const touch = event.changedTouches[0];
         handleVideoPlayback(touch.clientX, touch.clientY);
     }
 });
+
+
+
 
 
 
