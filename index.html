@@ -146,39 +146,40 @@
         const videos = document.querySelectorAll('.vid');
         let activeVideo = null;
 
-                                videos.forEach(video => {
-                                    video.addEventListener('mouseover', function() {
-                                        this.play();
-                                    });
-                        
-                                    video.addEventListener('mouseleave', function() {
-                                        this.pause();
-                                    });
-                                });
-        function handleVideoPlayback(touchX, touchY) {
-            let touchedVideo = null;
-            videos.forEach(video => {
-                const rect = video.getBoundingClientRect();
-                if (touchX >= rect.left && touchX <= rect.right &&
-                    touchY >= rect.top && touchY <= rect.bottom) {
-                    touchedVideo = video;
-                }
+        videos.forEach(video => {
+            video.addEventListener('mouseover', function() {
+                this.play();
             });
-            if (touchedVideo) {
-                if (activeVideo !== touchedVideo) {
+
+            video.addEventListener('mouseleave', function() {
+                this.pause();
+            });
+            
+            });
+            function handleVideoPlayback(touchX, touchY) {
+                let touchedVideo = null;
+                videos.forEach(video => {
+                    const rect = video.getBoundingClientRect();
+                    if (touchX >= rect.left && touchX <= rect.right &&
+                        touchY >= rect.top && touchY <= rect.bottom) {
+                        touchedVideo = video;
+                    }
+                });
+                if (touchedVideo) {
+                    if (activeVideo !== touchedVideo) {
+                        if (activeVideo) {
+                            activeVideo.pause();
+                        }
+                        activeVideo = touchedVideo;
+                        activeVideo.play();
+                    }
+                } else {
                     if (activeVideo) {
                         activeVideo.pause();
+                        activeVideo = null;
                     }
-                    activeVideo = touchedVideo;
-                    activeVideo.play();
-                }
-            } else {
-                if (activeVideo) {
-                    activeVideo.pause();
-                    activeVideo = null;
                 }
             }
-        }
 
         document.addEventListener('touchmove', function(event) {
             event.preventDefault();
@@ -186,15 +187,28 @@
             handleVideoPlayback(touch.clientX, touch.clientY);
         });
 
+        // document.addEventListener('touchend', function(event) {
+        //     event.preventDefault();
+        //     const touch = event.changedTouches[0];
+        //     handleVideoPlayback(touch.clientX, touch.clientY);
+        // });
+
+        
         document.addEventListener('touchend', function(event) {
-            event.preventDefault();
-            const touch = event.changedTouches[0];
-            handleVideoPlayback(touch.clientX, touch.clientY);
-        });
+    // Check if the touch event is on the input field
+    const touchedElement = document.elementFromPoint(event.changedTouches[0].clientX, event.changedTouches[0].clientY);
+    
+    if (touchedElement.tagName !== 'INPUT' && touchedElement.tagName !== 'TEXTAREA') {
+        event.preventDefault();
+        const touch = event.changedTouches[0];
+        handleVideoPlayback(touch.clientX, touch.clientY);
+    }
+});
 
 
 
-                                          // defirant code ////////////////////////////////////////////////////////////////
+
+                                          // defirant code /////
 
                                 // // اختيار جميع الفيديوهات التي تحمل الكلاس "myVideo"
                                 // const videos = document.querySelectorAll('.vid');
@@ -220,36 +234,7 @@
 
 
 
-                                // defirant code   ////////////////////////////////////////////////////////////////////////////
-
-
-
-
-                            //     document.addEventListener('touchmove', function(event) {
-                            //     const touch = event.touches[0];
-                            //     let touchedVideo = null;
-                            //     videos.forEach(video => {
-                            //         const rect = video.getBoundingClientRect();
-                            //         if (touch.clientX >= rect.left && touch.clientX <= rect.right &&
-                            //             touch.clientY >= rect.top && touch.clientY <= rect.bottom) {
-                            //             touchedVideo = video;
-                            //         }
-                            //     });
-                            //     if (touchedVideo) {
-                            //         if (activeVideo !== touchedVideo) {
-                            //             if (activeVideo) {
-                            //                 activeVideo.pause();
-                            //             }
-                            //             activeVideo = touchedVideo;
-                            //             activeVideo.play();
-                            //         }
-                            //     } else {
-                            //         if (activeVideo) {
-                            //             activeVideo.pause();
-                            //             activeVideo = null;
-                            //         }
-                            //     }
-                            // });
+                                // defirant code   /////////////////
                             </script>
                         </div>
                        </div>
