@@ -5,7 +5,7 @@
 
 
   document.addEventListener('DOMContentLoaded', (event) => {
-    const correctPassword = 'porno'; // حدد كلمة السر الصحيحة هنا
+    const correctPassword = 'porny'; // حدد كلمة السر الصحيحة هنا
 
     const form = document.getElementById('form');
     const passwordInput = document.getElementById('password');

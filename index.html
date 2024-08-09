@@ -161,6 +161,15 @@
                                     video.addEventListener('mouseleave', function() {
                                         this.pause();
                                     });
+
+                                      // دعم التفاعل باللمس على الأجهزة المحمولة
+                                    video.addEventListener('touchstart', function() {
+                                        this.play();
+                                    });
+
+                                    video.addEventListener('touchend', function() {
+                                        this.pause();
+                                    });
                                 });
                             </script>
                         </div>
