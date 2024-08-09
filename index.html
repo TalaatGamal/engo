@@ -139,20 +139,13 @@
                                     Your browser does not support the video tag.
                                 </video>
                             </div></a>    
-                            <!-- <script>
-                              document.getElementById('vid').addEventListener('mouseover', function() {
-                              this.play();
-                              });
-
-                              document.getElementById('vid').addEventListener('mouseleave', function() {
-                              this.pause();
-                              });
-
-                            </script> -->
+                          
                             <script>
-                                // اختيار جميع الفيديوهات التي تحمل الكلاس "myVideo"
-                                const videos = document.querySelectorAll('.vid');
-                        
+
+
+        const videos = document.querySelectorAll('.vid');
+        let activeVideo = null;
+
                                 videos.forEach(video => {
                                     video.addEventListener('mouseover', function() {
                                         this.play();
@@ -161,20 +154,76 @@
                                     video.addEventListener('mouseleave', function() {
                                         this.pause();
                                     });
-
-                                      // دعم التفاعل باللمس على الأجهزة المحمولة
-                                    video.addEventListener('touchstart', function() {
-                                        this.play();
-                                    });
-
-                                    // video.addEventListener('touchend', function() {
-                                    //     this.play();
-                                    // });
                                 });
-                                document.addEventListener('touchmove', function(event) {
-                                const touch = event.touches[0];
-                                handleVideoPlayback(touch.clientX, touch.clientY);
-                                });
+        function handleVideoPlayback(touchX, touchY) {
+            let touchedVideo = null;
+            videos.forEach(video => {
+                const rect = video.getBoundingClientRect();
+                if (touchX >= rect.left && touchX <= rect.right &&
+                    touchY >= rect.top && touchY <= rect.bottom) {
+                    touchedVideo = video;
+                }
+            });
+            if (touchedVideo) {
+                if (activeVideo !== touchedVideo) {
+                    if (activeVideo) {
+                        activeVideo.pause();
+                    }
+                    activeVideo = touchedVideo;
+                    activeVideo.play();
+                }
+            } else {
+                if (activeVideo) {
+                    activeVideo.pause();
+                    activeVideo = null;
+                }
+            }
+        }
+
+        document.addEventListener('touchmove', function(event) {
+            event.preventDefault();
+            const touch = event.touches[0];
+            handleVideoPlayback(touch.clientX, touch.clientY);
+        });
+
+        document.addEventListener('touchend', function(event) {
+            event.preventDefault();
+            const touch = event.changedTouches[0];
+            handleVideoPlayback(touch.clientX, touch.clientY);
+        });
+
+
+
+                                          // defirant code ////////////////////////////////////////////////////////////////
+
+                                // // اختيار جميع الفيديوهات التي تحمل الكلاس "myVideo"
+                                // const videos = document.querySelectorAll('.vid');
+                        
+                                // videos.forEach(video => {
+                                //     video.addEventListener('mouseover', function() {
+                                //         this.play();
+                                //     });
+                        
+                                //     video.addEventListener('mouseleave', function() {
+                                //         this.pause();
+                                //     });
+
+                                //       // دعم التفاعل باللمس على الأجهزة المحمولة
+                                //     video.addEventListener('touchstart', function() {
+                                //         this.play();
+                                //     });
+                                // });
+                                // document.addEventListener('touchmove', function(event) {
+                                // const touch = event.touches[0];
+                                // handleVideoPlayback(touch.clientX, touch.clientY);
+                                // }); 
+
+
+
+                                // defirant code   ////////////////////////////////////////////////////////////////////////////
+
+
+
 
                             //     document.addEventListener('touchmove', function(event) {
                             //     const touch = event.touches[0];

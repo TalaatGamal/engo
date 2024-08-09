@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Interaction</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            gap: 20px;
+        }
+        .video-container {
+            position: relative;
+            width: 10vw;
+            height: auto;
+        }
+        .video-container video {
+            width: 10vw;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video class="myVideo"  muted loop>
+            <source src="../vid-mp4/Carlesita.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="video-container">
+        <video class="myVideo" muted loop>
+            <source src="../vid-mp4/fayrouz.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="video-container">
+        <video class="myVideo"  muted loop>
+            <source src="../vid-mp4/carlesita2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script>
+        const videos = document.querySelectorAll('.myVideo');
+        let activeVideo = null;
+
+                                videos.forEach(video => {
+                                    video.addEventListener('mouseover', function() {
+                                        this.play();
+                                    });
+                        
+                                    video.addEventListener('mouseleave', function() {
+                                        this.pause();
+                                    });
+                                });
+        function handleVideoPlayback(touchX, touchY) {
+            let touchedVideo = null;
+            videos.forEach(video => {
+                const rect = video.getBoundingClientRect();
+                if (touchX >= rect.left && touchX <= rect.right &&
+                    touchY >= rect.top && touchY <= rect.bottom) {
+                    touchedVideo = video;
+                }
+            });
+            if (touchedVideo) {
+                if (activeVideo !== touchedVideo) {
+                    if (activeVideo) {
+                        activeVideo.pause();
+                    }
+                    activeVideo = touchedVideo;
+                    activeVideo.play();
+                }
+            } else {
+                if (activeVideo) {
+                    activeVideo.pause();
+                    activeVideo = null;
+                }
+            }
+        }
+
+        document.addEventListener('touchmove', function(event) {
+            event.preventDefault();
+            const touch = event.touches[0];
+            handleVideoPlayback(touch.clientX, touch.clientY);
+        });
+
+        document.addEventListener('touchend', function(event) {
+            event.preventDefault();
+            const touch = event.changedTouches[0];
+            handleVideoPlayback(touch.clientX, touch.clientY);
+        });
+    </script>
+</body>
+</html>
