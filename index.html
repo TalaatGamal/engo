@@ -168,41 +168,13 @@
                                     });
 
                                     video.addEventListener('touchend', function() {
-                                        this.pause();
+                                        this.play();
                                     });
                                 });
                                 document.addEventListener('touchmove', function(event) {
                                 const touch = event.touches[0];
                                 handleVideoPlayback(touch.clientX, touch.clientY);
                                 });
-
-                                const videos = document.querySelectorAll('.vid');
-                                let activeVideo = null;
-
-                                function handleVideoPlayback(touchX, touchY) {
-                                    let touchedVideo = null;
-                                    videos.forEach(video => {
-                                        const rect = video.getBoundingClientRect();
-                                        if (touchX >= rect.left && touchX <= rect.right &&
-                                            touchY >= rect.top && touchY <= rect.bottom) {
-                                            touchedVideo = video;
-                                        }
-                                    });
-                                    if (touchedVideo) {
-                                        if (activeVideo !== touchedVideo) {
-                                            if (activeVideo) {
-                                                activeVideo.pause();
-                                            }
-                                            activeVideo = touchedVideo;
-                                            activeVideo.play();
-                                        }
-                                    } else {
-                                        if (activeVideo) {
-                                            activeVideo.pause();
-                                            activeVideo = null;
-                                        }
-                                    }
-                                }
 
                             //     document.addEventListener('touchmove', function(event) {
                             //     const touch = event.touches[0];
